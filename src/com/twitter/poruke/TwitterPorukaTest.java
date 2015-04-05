@@ -11,7 +11,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 /**
- * @author pc
+ * @author djurdja
  *
  */
 public class TwitterPorukaTest {
