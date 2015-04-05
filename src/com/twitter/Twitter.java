@@ -34,7 +34,7 @@ public class Twitter {
 	public void unesi(String korisnik, String poruka) {
 			//Pravi se nova poruka i puni podacima.
 		TwitterPoruka tp = new TwitterPoruka();
-		tp.setKorisnik("korisnik");
+		tp.setKorisnik(korisnik);
 		tp.setPoruka(poruka);
 			//Poruka se unosi u listu na kraj
 		poruke.addLast(tp);
@@ -55,7 +55,8 @@ public class Twitter {
  		//Pomocna promenljiva koja predstavlja brojac upisanih poruka
  		int brojac = 0;
  		//Pomocni niz koja predstavlja rezultat pretrage tj. sadrzace
- 		//sve poruke koje u sebi imaju zadati tagTwitterPoruka[] rezultat = new TwitterPoruka[maxBroj];
+ 		//sve poruke koje u sebi imaju zadati tag
+ 		TwitterPoruka[] rezultat = new TwitterPoruka[maxBroj];
  		//Pretrazuju se poruke i traze se one koje sadrze tag.
  		//Ako se nadje neka takva, i ako nije prekoracen maxBroj
  		//ona se upisuje u niz. Ako je prekoracen maxBroj,pretraga
